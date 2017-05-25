@@ -22,6 +22,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix'=>'api'], function (){
     Route::get('{id}/all',['uses'=>'CadastroController@allregistros']);
-    Route::post('temp',['uses'=>'CadastroController@registro']);
+    Route::post('registro',['uses'=>'CadastroController@registro']);
 });
 

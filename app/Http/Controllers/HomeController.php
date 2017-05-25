@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Humidade;
 use App\Temperature;
 use Illuminate\Http\Request;
 
@@ -27,12 +28,16 @@ class HomeController extends Controller
     {
         $temp = Temperature::take(10)->orderBy('created_at', 'desc')->get()->implode('valor', ', ');
         $labeltemp = Temperature::take(10)->select('created_at')->orderBy('created_at', 'desc')->get();
-        //
-        //$label =  $labeltemp;
-        //foreach ($label as &$value) {            $value = date('H:i:s',strtotime($value));        }
-        //dd($labeltemp);
+
+        $humi = Humidade::take(10)->orderBy('created_at', 'desc')->get()->implode('valor', ', ');
+        $labelhumi = Humidade::take(10)->select('created_at')->orderBy('created_at', 'desc')->get();
 
 
-        return view('home', ['temp'=>$temp, 'label'=>$labeltemp]);
+        return view('home', [
+            'temp'=>$temp,
+            'labeltemp'=>$labeltemp,
+            'humi' => $humi,
+            'labelhumi' => $labelhumi
+        ]);
     }
 }

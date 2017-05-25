@@ -42,7 +42,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="{{url('/')}}" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>ELIS</b></span>
             <!-- logo for regular state and mobile devices -->
@@ -64,11 +64,12 @@
                             <span class="label label-success">4</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have 4 messages</li>
+                            <li class="header">Mensagens</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
-                                    <li><!-- start message -->
+                                    <!--
+                                    <li><!-- start message --
                                         <a href="#">
                                             <div class="pull-left">
                                                 <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" >
@@ -80,7 +81,7 @@
                                             <p>Why not buy a new awesome theme?</p>
                                         </a>
                                     </li>
-                                    <!-- end message -->
+                                    <!-- end message --
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
@@ -128,10 +129,11 @@
                                             </h4>
                                             <p>Why not buy a new awesome theme?</p>
                                         </a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </li>
-                            <li class="footer"><a href="#">See All Messages</a></li>
+
+                            <li class="footer"><a href="#">Ver Todas as Mensagens</a></li>
                         </ul>
                     </li>
                     <!-- Notifications: style can be found in dropdown.less -->
@@ -141,9 +143,10 @@
                             <span class="label label-warning">10</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have 10 notifications</li>
+                            <li class="header">Alertas do Sistema</li>
+                            <!--
                             <li>
-                                <!-- inner menu: contains the actual data -->
+                                <!-- inner menu: contains the actual data --
                                 <ul class="menu">
                                     <li>
                                         <a href="#">
@@ -173,7 +176,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="footer"><a href="#">View all</a></li>
+                            -->
+                            <li class="footer"><a href="#">Ver Todos</a></li>
+
                         </ul>
                     </li>
                     <!-- Tasks: style can be found in dropdown.less -->
@@ -182,12 +187,15 @@
                             <i class="fa fa-flag-o"></i>
                             <span class="label label-danger">9</span>
                         </a>
+
                         <ul class="dropdown-menu">
-                            <li class="header">You have 9 tasks</li>
+
+                            <li class="header">Procedimentos Pendentes</li>
+                            <!--
                             <li>
-                                <!-- inner menu: contains the actual data -->
+                                <!-- inner menu: contains the actual data --
                                 <ul class="menu">
-                                    <li><!-- Task item -->
+                                    <li><!-- Task item --
                                         <a href="#">
                                             <h3>
                                                 Design some buttons
@@ -200,8 +208,8 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- end task item -->
-                                    <li><!-- Task item -->
+                                    <!-- end task item --
+                                    <li><!-- Task item --
                                         <a href="#">
                                             <h3>
                                                 Create a nice theme
@@ -214,8 +222,8 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- end task item -->
-                                    <li><!-- Task item -->
+                                    <!-- end task item --
+                                    <li><!-- Task item --
                                         <a href="#">
                                             <h3>
                                                 Some task I need to do
@@ -228,8 +236,8 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- end task item -->
-                                    <li><!-- Task item -->
+                                    <!-- end task item --
+                                    <li><!-- Task item --
                                         <a href="#">
                                             <h3>
                                                 Make beautiful transitions
@@ -242,13 +250,16 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- end task item -->
+                                    <!-- end task item --
                                 </ul>
                             </li>
+                            -->
                             <li class="footer">
-                                <a href="#">View all tasks</a>
+                                <a href="#">Ver todos</a>
                             </li>
+
                         </ul>
+
                     </li>
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
@@ -353,9 +364,9 @@
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Version</b> 2.3.8
+            <b>Version</b>0.1.0
         </div>
-        <strong>Copyright &copy; 2017 <a href="#">ELIS SGC</a>.</strong> All rights
+        <strong>Copyright &copy; 2017 <a href="#">APOLO - PROJETO DE EFICIÊNCIA ENEGÉTICA </a>.</strong> All rights
         reserved.
     </footer>
 
@@ -370,7 +381,9 @@
         <div class="tab-content">
             <!-- Home tab content -->
             <div class="tab-pane" id="control-sidebar-home-tab">
+            <!--
                 <h3 class="control-sidebar-heading">Recent Activity</h3>
+
                 <ul class="control-sidebar-menu">
                     <li>
                         <a href="javascript:void(0)">
@@ -417,60 +430,61 @@
                         </a>
                     </li>
                 </ul>
-                <!-- /.control-sidebar-menu -->
 
-                <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Custom Template Design
-                                <span class="label label-danger pull-right">70%</span>
-                            </h4>
+               <!--  /.control-sidebar-menu -->
+                <!--
+                               <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                               <ul class="control-sidebar-menu">
+                                   <li>
+                                       <a href="javascript:void(0)">
+                                           <h4 class="control-sidebar-subheading">
+                                               Custom Template Design
+                                               <span class="label label-danger pull-right">70%</span>
+                                           </h4>
 
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Update Resume
-                                <span class="label label-success pull-right">95%</span>
-                            </h4>
+                                           <div class="progress progress-xxs">
+                                               <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:void(0)">
+                                           <h4 class="control-sidebar-subheading">
+                                               Update Resume
+                                               <span class="label label-success pull-right">95%</span>
+                                           </h4>
 
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Laravel Integration
-                                <span class="label label-warning pull-right">50%</span>
-                            </h4>
+                                           <div class="progress progress-xxs">
+                                               <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:void(0)">
+                                           <h4 class="control-sidebar-subheading">
+                                               Laravel Integration
+                                               <span class="label label-warning pull-right">50%</span>
+                                           </h4>
 
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Back End Framework
-                                <span class="label label-primary pull-right">68%</span>
-                            </h4>
+                                           <div class="progress progress-xxs">
+                                               <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:void(0)">
+                                           <h4 class="control-sidebar-subheading">
+                                               Back End Framework
+                                               <span class="label label-primary pull-right">68%</span>
+                                           </h4>
 
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
+                                           <div class="progress progress-xxs">
+                                               <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                                           </div>
+                                       </a>
+                                   </li>
+                               </ul>
+                               <!-- /.control-sidebar-menu -->
 
             </div>
             <!-- /.tab-pane -->
@@ -479,20 +493,20 @@
             <!-- /.tab-pane -->
             <!-- Settings tab content -->
             <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
+                <!--   <form method="post">
+                        <h3 class="control-sidebar-heading">General Settings</h3>
 
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                Report panel usage
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
 
-                        <p>
-                            Some information about this general settings option
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
+                            <p>
+                                Some information about this general settings option
+                            </p>
+                        </div>
+                        <!-- /.form-group --
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
@@ -504,7 +518,7 @@
                             Other sets of options are available
                         </p>
                     </div>
-                    <!-- /.form-group -->
+                    !-- /.form-group --
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
@@ -516,7 +530,7 @@
                             Allow the user to show his name in blog posts
                         </p>
                     </div>
-                    <!-- /.form-group -->
+                    <!-- /.form-group --
 
                     <h3 class="control-sidebar-heading">Chat Settings</h3>
 
@@ -526,7 +540,7 @@
                             <input type="checkbox" class="pull-right" checked>
                         </label>
                     </div>
-                    <!-- /.form-group -->
+                    <!-- /.form-group --
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
@@ -534,7 +548,7 @@
                             <input type="checkbox" class="pull-right">
                         </label>
                     </div>
-                    <!-- /.form-group -->
+                    <!-- /.form-group --
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
@@ -542,10 +556,11 @@
                             <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
                         </label>
                     </div>
-                    <!-- /.form-group -->
+                    <!-- /.form-group --
                 </form>
+                -->
             </div>
-            <!-- /.tab-pane -->
+            <!--  /.tab-pane -->
         </div>
     </aside>
     <!-- /.control-sidebar -->
