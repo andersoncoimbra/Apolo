@@ -12,20 +12,16 @@ use App\Http\Requests;
 class CadastroController extends Controller
 {
     //
-    protected $temp = null;
-    protected $humi = null;
 
-    public function __construct(Temperature $temp, Humidade $humidade)
-    {
-        $this->temp = $temp;
-        $this->humi = $humidade;
-    }
+
+
 
     public function allregistros($id){
 
         return ['Temperatura'=> $this->temp->alltemp(), 'Humidade'=> $this->humi->allhumi()];
     }
     public function registro(Request $request){
+
 
         $temp = new Temperature();
         $temp->idref = $request->id;
@@ -34,10 +30,10 @@ class CadastroController extends Controller
 
         $humi = new Humidade();
         $humi->idref = $request->id;
-        $humi->valor = $request->humidade;
+        $humi->valor = $request->umidade;
         $humi->save();
 
-        return ['Temperatura'=> $temp, 'Humidade'=> $humi];
+        return response()->json(['Temperatura'=> $temp, 'Humidade'=> $humi]);
     }
 
 }
